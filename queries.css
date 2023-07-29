@@ -1,0 +1,156 @@
+@media (max-width: 106em) {
+  html {
+    font-size: 56.25%;
+  }
+
+  .education-flex {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 4rem;
+  }
+
+  .flex-boxes {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 83em) {
+  .flex-boxes {
+    flex-flow: wrap;
+  }
+
+  .cover-section {
+    padding: 0 5rem;
+  }
+}
+
+@media (max-width: 62em) {
+  body {
+    padding: 0;
+  }
+
+  .header-main-div {
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+    transform: translateX(-100%);
+    transition: 0.3s all ease-in-out;
+  }
+
+  .responsive-header .header-main-div {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    transition: 0.3s all ease-in-out;
+    transform: translateX(0);
+    position: fixed;
+    z-index: 9999;
+  }
+
+  .menu-buttons {
+    display: block;
+    z-index: 9999;
+    position: fixed;
+    top: 2rem;
+    right: 2rem;
+  }
+
+  .responsive-header .icon-mobile-nav[name="close-outline"] {
+    display: block;
+  }
+
+  .responsive-header .icon-mobile-nav[name="menu-outline"] {
+    display: none;
+  }
+}
+
+@media (max-width: 49em) {
+  html {
+    font-size: 50%;
+  }
+
+  .main-about-flex {
+    padding: 4rem;
+  }
+}
+
+@media (max-width: 36em) {
+  html {
+    font-size: 37.5%;
+  }
+
+  h1 {
+    font-size: 4rem;
+  }
+
+  .photos-box {
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 25em) {
+  html {
+    font-size: 43.75%;
+  }
+  .responsive-header .header-main-div {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    transition: 0.3s all ease-in-out;
+    transform: translateX(0);
+    position: fixed;
+    z-index: 9999;
+    width: 100%;
+  }
+
+  .hades-img {
+    width: 16rem;
+    height: 16rem;
+  }
+
+  .navigation-a {
+    height: 7rem;
+    width: 35rem;
+    font-size: 2.4rem;
+  }
+
+  .main-about-flex {
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .flex-boxes {
+    flex-direction: column;
+    margin-bottom: 3rem;
+  }
+
+  .boxes {
+    width: 42rem;
+    max-width: 100%;
+  }
+
+  .about-div {
+    justify-self: flex-start;
+  }
+
+  .about-section {
+    margin-bottom: 5rem;
+  }
+
+  .education-section {
+    padding: 4rem;
+  }
+
+  .skills-section {
+    margin-bottom: 6rem;
+  }
+
+  .img-skills {
+    width: 50rem;
+    max-width: 100%;
+    object-fit: cover;
+  }
+}
